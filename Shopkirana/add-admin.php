@@ -5,7 +5,7 @@
  	header('location:login.php');
  }
   ?>
-	 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +22,7 @@
 </head>
 <body>
 	<!---============================== Navbar ============================ -->
-	<div class="navbar">	
+	<div class="navbar">
 		<ul class="navbar-nav">
 			<li class="navbar-item">
 				<a class="nav-link">
@@ -39,7 +39,13 @@
 		<form class="navbar-search">
 			<input type="text" name="search" class="navbar-search-input" placeholder="What you looking for..">
 			<i class="fas fa-search"></i>
-			
+
+		</form>
+
+    <form class="navbar-search">
+			<input type="text" name="search" class="navbar-search-input" placeholder="What you looking for..">
+			<i class="fas fa-search"></i>
+
 		</form>
 
 		<ul class="navbar-nav nav-right">
@@ -122,14 +128,14 @@
 					<span>Log Out</span>
 				</a>
 			</li>
-		</ul>		
+		</ul>
 	</div>
 	<!--==================================== End sidebar ===================================-->
 
 	<!-- =====================Main Content started ======================== -->
 
 	<!-- =====================Add admin started ======================== -->
-	
+
 	<div class="wrapper">
 		<div class="row">
 			<div class="col-md-4 add_admin_section">
@@ -142,11 +148,11 @@
 					<input type="password" name="repassword" placeholder="Enter Re-password">
 					<input id="image-file" type="file" name="image">
 					<input id="submit-btn" type="submit" name="submit">
-				</form>	
+				</form>
 			</div>
 			<!-- =====================Add admin end ======================== -->
 			<!-- =====================Veiw all data on admin ======================== -->
-			<?php 
+			<?php
 				require "db-connection.php";
 				$data=mysqli_query($con, "select * from add_admin");
 				$num_row=mysqli_num_rows($data);
@@ -163,14 +169,14 @@
 	                    <th>Username</th>
 	                    <th>Image</th>
 	                    <th>Action</th>
-	 				</tr>	
+	 				</tr>
 	 			</thead>
 	 			<tbody>
- 			<?php 
+ 			<?php
 				$i=1;
 				while ($i<=$num_row)
 				{
-					$row=mysqli_fetch_array($data);	
+					$row=mysqli_fetch_array($data);
 				 ?>
                     <tr>
                         <td><?php echo $i; ?> </td>
@@ -180,11 +186,11 @@
                         <td><img src="images/<?php echo $row['image'];?>" alt="userimage"> </td>
                         <td><button onclick="deleteadmin(<?php echo $row['id']; ?>)">Delete</button>
                         	<button>Update</button></td>
-                    </tr> 
-            <?php 
+                    </tr>
+            <?php
                 $i++;
                 }
-            ?>        
+            ?>
  			</tbody>
  		</table>
  		 <button id="hidebtn" onClick="viewbutton()">View All Admin</button>
@@ -193,7 +199,7 @@
 </div>
 	<!-=================================- Main content End ===============================================-->
 <script type="text/javascript">
-	
+
 	function deleteadmin(ids)
 	{
 		var insert=confirm("Are you sure to delete admin");
@@ -208,6 +214,6 @@
 		document.querySelector('.view-admin-section table').style.display = "block";
 	}
 
-</script>	
+</script>
 </body>
 </html>
