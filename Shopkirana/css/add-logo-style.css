@@ -1,0 +1,295 @@
+/* ===================navbar css started===================== */
+:root
+{
+	--navbar-color: #00ADB5;
+	--sidebar-color:#393E46;
+	--button-color: #00ADB5;
+	--button-hover-color:#51C4D3;
+	--bg-color: #EEEEEE;
+	--text-color: #FFFFFF;
+
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+}
+body
+{
+	background-color: var(--bg-color);
+
+}
+
+.navbar
+{
+	background-color: var(--sidebar-color);
+	display: flex;
+	flex-direction: row;
+	color: var(--bg-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0px;
+	z-index: 100;
+	box-shadow: rgba(0, 0, 0, 0.70) 0px 1px 4px 1px;
+}
+.navbar-nav
+{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 15px;
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+.nav-link
+{
+	float: left;
+	text-align: center;
+	padding: 15px 10px;
+	text-decoration: none;
+	font-size: 17px;
+	position: relative;
+}
+.nav-link:hover
+{
+	cursor: pointer;
+}
+.navbar-nav i
+{
+	font-size: 1.4rem;
+}
+.nav-right
+{
+	margin-left: auto;
+	margin-right: 21px;
+}
+.navbar-search
+{
+	position: relative;
+	margin: auto;
+	width: 50%;
+}
+.navbar-search input
+{
+	background-color: white;
+	border: none;
+	padding: 12px 50px 12px 50px;
+	width: 100%;
+	outline: none;
+	border-radius: 20px;
+}
+.navbar-search i
+{
+	position: absolute;
+	top: 30%;
+	right: 20px;
+	cursor: pointer;
+	color: black;
+}
+.profile-img img
+{
+	width: 39px;
+	height: 39px;
+	border-radius: 50%;
+	margin-top: -5px;
+}
+.nav-link p
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.navbar-badge 
+{
+	font-size: .6rem;
+	padding: 2px 4px;
+	position: absolute;
+	right: 5px;
+	top: 9px;
+	color: white;
+	background-color:red ;
+	font-weight: bold;
+	border-radius: 50%;	
+}
+/*================navbar css End=======================*/
+
+/*================Sidebar Css Started=======================*/
+.sidebar
+{
+	width: 80px;
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+	margine-top: 65px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.70) 0px 1px 4px 1px;
+	z-index: 100;
+	transition: width.5s;
+}
+.sidebar:hover
+{
+	width: 190px;
+}
+.sidebar-nav-item
+{
+	width: 100%;
+}
+.sidebar-nav-link
+{
+	display: flex;
+	align-items: center;
+	color: var(--navbar-color);
+	text-decoration: none;
+}
+.sidebar-nav-link i
+{
+	font-size: 1.5rem;
+	color: var(--navbar-color);
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50% ,-50%);
+}
+.sidebar-nav-link div
+{
+	min-width: 82px;
+	height: 50px;
+	position: relative;
+}
+.sidebar-nav-link:hover
+{
+	background-color: var(--bg-color);
+	color:var(--button-color) ;
+}
+.active
+{
+	background-color: var(--button-color);
+	color: white;
+}
+.active div
+{
+	border-left: 5px solid red;
+}
+.active i
+{
+	color: white;
+}
+.active span
+{
+	color: white;
+}
+
+/*================Sidebar Css End=======================*/
+
+/*================Content Css Started=======================*/
+.wrapper
+{
+	padding: 10px;
+	padding-left: 230px;
+	margin-top: 85px;
+}
+/*================Content Css End=======================*/
+
+/* ==================================Add Logo Css Started ================================= */
+		.main-content-div
+		{
+			width: 700px;
+			height: auto;
+			box-shadow: rgba(0, 0, 0, 70) 0px 1px 4px 1px;
+			margin: 50px auto;
+			background-color: white;
+		}
+		.image-upload
+		{
+			width: 350px;
+			height: 300px;
+			padding-left: 35px;
+			margin-bottom: 15px;
+
+
+		}
+		.image-upload img
+		{
+			width: 180px;
+			height: 180px;
+			padding: 15px;
+			margin: 40px 0 30px 55px;
+			background-color: #EEEEEE;
+			border-radius: 5px;
+		}
+
+		.image-upload button
+		{
+			background-color: #00ADB5;
+			width: 130px;
+			height: 35px;
+			color: white;
+			border: none;
+			border-radius: 5px;
+		}
+		.image-upload button:hover
+		{
+			background-color: #393E46;
+		}
+		.choose-content input
+		{
+			width: 80%;
+			height: 35px;
+			margin-bottom: 30px;
+			margin-left: 50px;
+			border-radius: 5px;
+			border: 1px solid #34ebdb;
+			outline: none;
+			background-color: #EEEEEE;
+			padding: 10px;
+		}
+		#file-image
+		{
+			border: none;
+			margin-top: 40px;
+		}
+		#submit
+		{
+			background-color: #00ADB5;
+			color: white;
+			border: none;
+		}
+		#submit:hover
+		{
+			background-color: #393E46;
+		}
+/* ==================================Add Logo Css End ================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================sidebar css End=======================*/

@@ -1,0 +1,328 @@
+/* ===================navbar css started===================== */
+:root
+{
+	--navbar-color: #00ADB5;
+	--sidebar-color:#393E46;
+	--button-color: #00ADB5;
+	--button-hover-color:#51C4D3;
+	--bg-color: #EEEEEE;
+	--text-color: #FFFFFF;
+
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body
+{
+	background-color: var(--bg-color);
+
+}
+
+.navbar
+{
+	background-color: var(--sidebar-color);
+	display: flex;
+	flex-direction: row;
+	color: var(--bg-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0px;
+	z-index: 100;
+	box-shadow: rgba(0, 0, 0, 0.70) 0px 1px 4px 1px;
+}
+.navbar-nav
+{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 15px;
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+.nav-link
+{
+	float: left;
+	text-align: center;
+	padding: 15px 10px;
+	text-decoration: none;
+	font-size: 17px;
+	position: relative;
+}
+.nav-link:hover
+{
+	cursor: pointer;
+}
+.navbar-nav i
+{
+	font-size: 1.4rem;
+}
+.nav-right
+{
+	margin-left: auto;
+	margin-right: 21px;
+}
+.navbar-search
+{
+	position: relative;
+	margin: auto;
+	width: 50%;
+}
+.navbar-search input
+{
+	background-color: white;
+	border: none;
+	padding: 12px 50px 12px 50px;
+	width: 100%;
+	outline: none;
+	border-radius: 20px;
+}
+.navbar-search i
+{
+	position: absolute;
+	top: 30%;
+	right: 20px;
+	cursor: pointer;
+	color: black;
+}
+.profile-img img
+{
+	width: 39px;
+	height: 39px;
+	border-radius: 50%;
+	margin-top: -5px;
+}
+.nav-link p
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.navbar-badge 
+{
+	font-size: .6rem;
+	padding: 2px 4px;
+	position: absolute;
+	right: 5px;
+	top: 9px;
+	color: white;
+	background-color:red ;
+	font-weight: bold;
+	border-radius: 50%;	
+}
+/*================navbar css End=======================*/
+
+/*================Sidebar Css Started=======================*/
+.sidebar
+{
+	width: 80px;
+	height: 100vh;
+	background-color: white;
+	position: fixed;
+	margine-top: 65px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.70) 0px 1px 4px 1px;
+	z-index: 100;
+	transition: width.5s;
+}
+.sidebar:hover
+{
+	width: 190px;
+}
+.sidebar-nav-item
+{
+	width: 100%;
+}
+.sidebar-nav-link
+{
+	display: flex;
+	align-items: center;
+	color: var(--navbar-color);
+	text-decoration: none;
+}
+.sidebar-nav-link i
+{
+	font-size: 1.5rem;
+	color: var(--navbar-color);
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50% ,-50%);
+}
+.sidebar-nav-link div
+{
+	min-width: 82px;
+	height: 50px;
+	position: relative;
+}
+.sidebar-nav-link:hover
+{
+	background-color: var(--bg-color);
+	color:var(--button-color) ;
+}
+.active
+{
+	background-color: var(--button-color);
+	color: white;
+}
+.active div
+{
+	border-left: 5px solid red;
+}
+.active i
+{
+	color: white;
+}
+.active span
+{
+	color: white;
+}
+
+/*================Sidebar Css End=======================*/
+
+/*================Content Css Started=======================*/
+.wrapper
+{
+	padding: 10px;
+	padding-left: 230px;
+	margin-top: 95px;
+	background-color: white;
+}
+.add_admin_section
+	{
+		margin-top: 20px;
+		height: auto;
+		border-radius: 30px;
+		box-shadow:rgba(0, 0, 0, 0.70) 0px 1px 4px 1px;
+		background-color: white;
+	}
+	.add_admin_section h1
+	{
+		color: #00ADB5;
+		text-align: center;
+		padding: 0px 0 20px 0;
+	}
+	.add-admin-form
+	{
+		text-align: center;
+		margin: 0px 30px 0px 30px;
+	}
+	.add-admin-form input
+	{
+		width: 80%;
+		height: 40px;
+		margin-bottom: 30px;
+		border-radius: 5px;
+		border: 1px solid #34ebdb;
+		outline: none;
+		background-color: #EEEEEE;
+		padding: 10px;
+	}
+	#image-file
+	{
+		border: none;
+		height: 35px;
+		width: 80%;
+		margin-left: 30px;
+	}
+	#submit-btn
+	{
+		background-color:#00ADB5;
+	}
+	#submit-btn:hover
+	{
+		background-color:#34ebdb;
+		cursor: pointer;
+	}
+/*================Content Css End=======================*/
+	
+	table
+ 		{
+ 			border: 2px solid red;
+            width: 600px;
+            line-height: 30px;
+            margin: 20px auto;
+            display: none;
+
+
+ 		}
+     table <tr>
+        {
+             border-bottom: 2px;
+
+        }
+        table tr td
+        {
+        	padding: 7px;
+        }
+         table tr td img
+         {
+         	width: 70px;
+         	height: 70px;
+         }
+     button
+     {
+     	width: 100px;
+     	margin-left: 10px;
+     	background-color: #00ADB5;
+     	border: none;
+     	text-align: center;
+     }
+     button:hover
+     {
+     	background-color:#34ebdb;
+		cursor: pointer;
+     }
+
+    #hidebtn
+     {
+     	width: 200px;
+     	height: 35px;
+     	background-color: #00ADB5;
+     	border: none;
+     	margin-left: 250px;
+     }
+      .view-admin-section input:hover
+      {
+      	background-color:#34ebdb;
+		cursor: pointer;
+      }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================sidebar css End=======================*/
