@@ -1,9 +1,9 @@
-<?php 
+<?php
 session_start();
 
-if (isset($_SESSION['name'])) 
+if (isset($_SESSION['name']))
 {
-	header('location:admin_panel.php');	
+	header('location:admin_panel.php');
 }
  ?>
 <!DOCTYPE html>
@@ -47,11 +47,11 @@ if (isset($_SESSION['name']))
 			border-radius: 5px;
 			padding: 10px;
 			border: none;
-			margin-top: 10%;	
+			margin-top: 10%;
 		}
 		.submit-btn
 		{
-			border-radius: 5px;
+			border-radius: 25px;
 			border: none;
 			padding: 10px;
 			width: 100%;
@@ -59,7 +59,7 @@ if (isset($_SESSION['name']))
 			background-color: #F04E23;
 			color: white;
 			font-size: 16px;
-			font-weight: bold;	
+			font-weight: bold;
 		}
 		 .signup-text
 		{
@@ -73,7 +73,7 @@ if (isset($_SESSION['name']))
 		}
 
 
-		
+
 	</style>
 </head>
 <body>
@@ -89,12 +89,12 @@ if (isset($_SESSION['name']))
 				<div><input type="password" name="password" placeholder="password" required=""></div>
 
 				<button type="submit" class="submit-btn" name="action">Log In</button>
-			</form>	
+			</form>
 			<a href="#" style="color: white;">Forgot password?</a>
 			<div class="signup-text">
 				<p>Don't have an account? <a href="registration.php">Sign up</a></p>
-			</div>	
-		</div>	
+			</div>
+		</div>
 	</div>
 </body>
 </html>
